@@ -30,6 +30,7 @@ requirements:
     - numpy
     - scipy
     - netcdf4
+    # dedop.ui.analysis only:
     - pyproj
     - matplotlib
     - bokeh
