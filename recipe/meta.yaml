@@ -36,6 +36,7 @@ requirements:
     - bokeh
     - jupyter
     - ipywidgets
+    - menuinst                    # [win]
 
 test:
   # Python imports
@@ -59,8 +60,9 @@ test:
     - pytest-cov
 
 app:
-  entry: dedop
-  icon: icon_64x64.png
+  entry: dedop                                 # [not osx]
+  entry: open ${PREFIX}/bin/dedop.command      # [osx]
+  icon: dedop.png
   own_environment: False
   summary:  "Delay Doppler Altimeter Tool"
 
