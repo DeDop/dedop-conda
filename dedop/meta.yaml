@@ -60,7 +60,7 @@ test:
 
 app:
   entry: dedop
-  icon: dedop-64.png
+  icon: icon_64x64.png
   own_environment: False
   summary:  "Delay Doppler Altimeter Tool"
 
