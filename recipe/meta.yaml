@@ -44,7 +44,7 @@ test:
     - dedop
     - dedop.ui
     - dedop.ui.cli
-    - dedop.ui.analysis
+    - dedop.ui.inspect
 
   commands:
     # You can put test commands to be run here.  Use this to test that the
