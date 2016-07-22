@@ -8,6 +8,14 @@ specs:
   - python 3.5*
   - conda
   - jupyter
+  - numpy
+  - scipy
+  - netcdf4
+  # dedop.ui.analysis only:
+  - pyproj
+  - matplotlib
+  - bokeh
+  - ipywidgets
 
 exclude:
   - qt
@@ -16,6 +24,7 @@ exclude:
 
 packages:
   - file:///C|/Users/Norman/Miniconda3/conda-bld/win-64/dedop-0.5.0-py35_0.tar.bz2
+  #- file:///home/marcoz/Projects/Anaconda/miniconda3/conda-bld/linux-64/dedop-0.5.0-py35_0.tar.bz2
 
 license_file: ../LICENSE
 
