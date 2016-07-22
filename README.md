@@ -62,8 +62,8 @@ Build Anaconda installer `dedop` (see `installer/construct.yaml`):
 * On Windows, `constructor` will install anything it finds in a package's `Menu` entry.
   Therefore users currently find also entries for Jupyter Notebook and the IPython QT Console, 
   which is annoying.
-* We would actually like to create an installer, where Miniconda is just a sub-tree:
-  ```
+* We would actually like to create an installer, where Miniconda is just a sub-tree. This is required because later we'll have to add an Electron GUI with HTML/JS sources:
+```
     <install-dir>/
         bin/
         docs/
@@ -71,6 +71,5 @@ Build Anaconda installer `dedop` (see `installer/construct.yaml`):
         gui/
         python/
         ...
-  ```
-  This is required because later we'll have to add an Electron GUI with HTML/JS sources.
+```
 * Checkout: https://github.com/conda/conda-launch  
