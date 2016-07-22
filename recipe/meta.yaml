@@ -7,7 +7,7 @@ build:
   number: 0
   # noarch_python: False
   # preserve_egg_dir: False
-  osx_is_app: True
+  # osx_is_app: False
   entry_points:
     # Put any entry points (scripts to be generated automatically) here.
     - dedop = dedop.ui.cli:main
@@ -59,9 +59,10 @@ test:
     - pytest
     - pytest-cov
 
+# The app section is for creating entries in the Anaconda Launcher / Navigator
 app:
-  entry: dedop                                 # [not osx]
-  entry: open ${PREFIX}/bin/dedop.command      # [osx]
+  entry: dedop                                       # [not osx]
+  entry: open ${PREFIX}/bin/dedop-shell.command      # [osx]
   icon: dedop.png
   own_environment: False
   summary:  "Delay Doppler Altimeter Tool"
