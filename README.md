@@ -4,6 +4,8 @@ Conda recipe and Anaconda installer for the DeDop tool contained in https://gith
 
 ## Conda package
 
+### Building the DeDop package
+
 Install `conda-build` in your root Miniconda:
 
     source activate
@@ -27,10 +29,16 @@ Test new Conda package `dedop` in test environment `dedop-test`
     ...
     dedop --help
 
+### Remaining problems & TODOs
+
+* Must upload the package to a public Anaconda channel
+
 ## Anaconda installer
 
-Warning: there is still an absolute (Windows!) path in `installer/construct.yaml` which will remain
-until we have uploaded the DeDop Conda package to a public repository.
+### Building the installer
+
+*Warning: there is still an absolute (Windows!) path in `installer/construct.yaml` which will remain
+until we have uploaded the DeDop Conda package to a public repository.*
 
 Install `constructor` in your root Miniconda:
 
@@ -45,3 +53,24 @@ Build Anaconda installer `dedop` (see `installer/construct.yaml`):
 
     cd dedop-conda
     constructor installer
+
+### Remaining problems & TODOs
+
+* For the DeDop shell, we'd like to have desktop icons for Windows, Mac OS and at least Ubuntu.
+  Currently, we can only have a Windows menu group (which is ok).
+  See https://github.com/conda/constructor/issues/38
+* On Windows, `constructor` will install anything it finds in a package's `Menu` entry.
+  Therefore users currently find also entries for Jupyter Notebook and the IPython QT Console, 
+  which is annoying.
+* We would actually like to create an installer, where Miniconda is just a sub-tree:
+  ```
+    <install-dir>/
+        bin/
+        docs/
+        notebooks/
+        gui/
+        python/
+        ...
+  ```
+  This is required because later we'll have to add an Electron GUI with HTML/JS sources.
+  
