@@ -73,4 +73,4 @@ Build Anaconda installer `dedop` (see `installer/construct.yaml`):
         ...
   ```
   This is required because later we'll have to add an Electron GUI with HTML/JS sources.
-  
+* Checkout: https://github.com/conda/conda-launch  
