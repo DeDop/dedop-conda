@@ -16,10 +16,6 @@ specs:
   - matplotlib
   - bokeh
   - ipywidgets
-
-exclude:
-  - qt
-  - sip
   - pyqt
 
 packages:
