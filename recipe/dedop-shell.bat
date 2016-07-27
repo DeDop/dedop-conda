@@ -2,12 +2,13 @@
 
 set SCRIPTS_DIR=%~dp0
 
+rem Make PREFIX=%SCRIPTS_DIR%\.. an absolute path
 pushd .
-cd %SCRIPTS_DIR%
-set PREFIX=%~f1
+cd %SCRIPTS_DIR%\..
+set PREFIX=%CD%
 popd
 
-call "%PREFIX%\Scripts\activate.bat" "%PREFIX%"
+call "%SCRIPTS_DIR%\activate.bat" "%PREFIX%"
 if errorlevel 1 exit 1
 
 prompt $G$S
