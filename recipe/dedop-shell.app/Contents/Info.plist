@@ -5,7 +5,7 @@
 	<key>CFBundleName</key>
 	<string>DeDop Shell</string>
 	<key>CFBundleExecutable</key>
-	<string>snap</string>
+	<string>dedop-shell.command</string>
 	<key>CFBundleIconFile</key>
 	<string>app.icns</string>
 	<key>CFBundleInfoDictionaryVersion</key>
