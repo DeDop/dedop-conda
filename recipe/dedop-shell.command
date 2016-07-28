@@ -3,6 +3,7 @@
 DEDOP_BIN="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 DEDOP_HOME="$( cd "${DEDOP_BIN}/.."  && pwd )"
 
+reset
 echo
 echo Welcome to the DeDop Shell. Type "dedop -h" to get help.
 echo
