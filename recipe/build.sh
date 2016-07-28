@@ -6,6 +6,7 @@ if [ `uname` == Darwin ]
 then
     cp $RECIPE_DIR/dedop-shell.command $PREFIX/bin/
     cp -r $RECIPE_DIR/dedop-shell.app $PREFIX/bin/
+    sed -i -e "s,\${PKG_VERSION},${PKG_VERSION},g"  "${PREFIX}/bin/dedop-shell.app/Contents/Info.plist"
 else
     cp $RECIPE_DIR/dedop-shell.sh $PREFIX/bin
     mkdir -p  $PREFIX/share/dedop
