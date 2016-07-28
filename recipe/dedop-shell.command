@@ -9,5 +9,6 @@ echo Welcome to the DeDop Shell. Type "dedop -h" to get help.
 echo
 
 source "${DEDOP_BIN}/activate" "${DEDOP_HOME}"
-export PS1="(DeDop) $ "
+unset PROMPT_COMMAND
+export PS1="\[\033[1;34m\](DeDop)\[\033[0m\] $ "
 exec /bin/bash --norc -i
