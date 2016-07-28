@@ -1,14 +1,14 @@
 @echo off
 
-set SCRIPTS_DIR=%~dp0
+set DEDOP_BIN=%~dp0
 
-rem Make PREFIX=%SCRIPTS_DIR%\.. an absolute path
+rem Make DEDOP_HOME=%DEDOP_BIN%\.. an absolute path:
 pushd .
-cd %SCRIPTS_DIR%\..
-set PREFIX=%CD%
+cd %DEDOP_BIN%\..
+set DEDOP_HOME=%CD%
 popd
 
-call "%SCRIPTS_DIR%\activate.bat" "%PREFIX%"
+call "%DEDOP_BIN%\activate.bat" "%DEDOP_HOME%"
 if errorlevel 1 exit 1
 
 prompt $G$S
