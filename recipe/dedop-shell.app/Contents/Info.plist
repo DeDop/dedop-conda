@@ -5,7 +5,7 @@
 	<key>CFBundleName</key>
 	<string>DeDop Shell</string>
 	<key>CFBundleExecutable</key>
-	<string>dedop-shell.command</string>
+	<string>launch-dedop-shell-in-terminal.sh</string>
 	<key>CFBundleIconFile</key>
 	<string>app.icns</string>
 	<key>CFBundleInfoDictionaryVersion</key>
@@ -17,11 +17,11 @@
 	<key>CFBundleIdentifier</key>
 	<string>snap-desktop</string>
 	<key>CFBundleVersion</key>
-	<string>0.5.0</string>
+	<string>${PKG_VERSION}</string>
 	<key>CFBundleShortVersionString</key>
-	<string>0.5.0</string>
+	<string>${PKG_VERSION}</string>
 	<key>CFBundleGetInfoString</key>
-	<string>0.5.0</string>
+	<string>${PKG_VERSION}</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleAllowMixedLocalizations</key>
