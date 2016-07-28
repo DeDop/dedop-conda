@@ -61,8 +61,9 @@ test:
 
 # The app section is for creating entries in the Anaconda Launcher / Navigator
 app:
-  entry: dedop                                       # [not osx]
+  entry: open ${PREFIX}/Scripts/dedop-shell.bat      # [win]
   entry: open ${PREFIX}/bin/dedop-shell.command      # [osx]
+  entry: open ${PREFIX}/bin/dedop-shell.sh           # [unix]
   icon: dedop.png
   own_environment: False
   summary:  "Delay Doppler Altimeter Tool"
