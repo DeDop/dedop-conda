@@ -9,5 +9,4 @@ skip_tags: true
 install:
   - set PATH=C:\Miniconda35-x64;C:\Miniconda35-x64\Scripts;%PATH%
   - conda install -y constructor
-  - ls
-  - cd dedop-conda && constructor installer
+  - constructor installer
