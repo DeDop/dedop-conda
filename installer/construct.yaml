@@ -3,6 +3,7 @@ version: 0.5.1
 
 channels:
   - http://repo.continuum.io/pkgs/free/
+  - https://conda.anaconda.org/pans
 
 specs:
   - python 3.5*
@@ -11,16 +12,13 @@ specs:
   - numpy
   - scipy
   - netcdf4
+  - dedop
   # dedop.ui.analysis only:
   - pyproj
   - matplotlib
   - bokeh
   - ipywidgets
   - pyqt
-
-packages:
-  - file:///C|/Users/Norman/Miniconda3/conda-bld/win-64/dedop-0.5.0-py35_0.tar.bz2
-  #- file:///home/marcoz/Projects/Anaconda/miniconda3/conda-bld/linux-64/dedop-0.5.0-py35_0.tar.bz2
 
 license_file: ../LICENSE
 
