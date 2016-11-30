@@ -1,3 +1,5 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/t5kgos0p7d6gs3dn?svg=true)](https://ci.appveyor.com/project/hans-permana/dedop-conda)
+
 # dedop-conda
 
 Conda recipe and Anaconda installer for the DeDop tool contained in https://github.com/DeDop/dedop
