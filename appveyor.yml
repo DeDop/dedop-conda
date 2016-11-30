@@ -10,3 +10,7 @@ install:
   - set PATH=C:\Miniconda35-x64;C:\Miniconda35-x64\Scripts;%PATH%
   - conda install -y constructor
   - constructor installer
+
+artifacts:
+  - path: '*.exe'
+    name: dedop-core-installer-exe
