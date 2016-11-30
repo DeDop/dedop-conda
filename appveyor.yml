@@ -1,0 +1,12 @@
+build: off
+
+branches:
+  only:
+    - master
+
+skip_tags: true
+
+install:
+  - set PATH=C:\Miniconda35-x64;C:\Miniconda35-x64\Scripts;%PATH%
+  - activate
+  - conda install -y conda-build
