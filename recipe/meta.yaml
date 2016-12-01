@@ -13,7 +13,7 @@ build:
     - dedop = dedop.ui.cli:main
 
 source:
-  git_rev: v0.5.2rc01
+  #git_rev: v0.5.2rc01
   git_url: https://github.com/DeDop/dedop.git
   # Uncomment to skip the "git clone" step
   # path: ../../dedop
@@ -30,6 +30,7 @@ requirements:
     - numpy
     - scipy
     - netcdf4
+    - numexpr
     # dedop.ui.analysis only:
     - pyproj
     - matplotlib
