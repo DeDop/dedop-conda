@@ -6,11 +6,6 @@ matrix:
     - os: osx
       sudo: required
 
-language: python
-
-python:
-  - "3.5"
-
 install:
   - sudo apt-get update
   - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then
@@ -25,8 +20,8 @@ install:
   - conda update -q conda
   # Useful for debugging any issues with conda
   - conda info -a
-  - source activate
-  - conda install constructor
+  - conda create -q -n constructor-environment python=$TRAVIS_PYTHON_VERSION constructor
+  - source activate constructor-environment
 
 script:
   - constructor installer
