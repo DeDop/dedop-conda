@@ -1,9 +1,9 @@
 package:
   name: dedop
-  version: "0.5.1"
+  version: "0.5.2"
 
 build:
-  #string: 'rc0'
+  string: 'rc01'
   number: 0
   # noarch_python: False
   # preserve_egg_dir: False
@@ -13,7 +13,7 @@ build:
     - dedop = dedop.ui.cli:main
 
 source:
-  git_rev: v0.5.1
+  git_rev: v0.5.2rc01
   git_url: https://github.com/DeDop/dedop.git
   # Uncomment to skip the "git clone" step
   # path: ../../dedop
