@@ -1,0 +1,15 @@
+matrix:
+  include:
+    - os: linux
+      dist: trusty
+      sudo: required
+    - os: osx
+      sudo: required
+
+language: python
+
+install:
+  - conda install -y constructor
+
+script:
+  - constructor installer
