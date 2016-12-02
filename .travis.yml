@@ -27,3 +27,11 @@ install:
 
 script:
   - constructor installer
+
+env:
+  global:
+    - "FTP_USER=dedop"
+    - "FTP_PASSWORD=R7QPG40QdbDTPufiSRmJ7Gv2n2wv0VDX5OdF9RcSmyh/i2ilJToLHHCZOP2ZEtK+CzYK7EiMewZrsG5+PGSOY5/n4JBBU5mcldMcfV4y7c4FLsmtGDgW5XTrYuAu5HOtjpZniaK+YOnjTESttnlNXXHY9tP9An08CYj+ZAR7lQlxPHcgs0IOvmd5zb8SQXCzkydrhT5w39TlZvyujKhyJLu4ycvAZbcXV2IaBjOOir6HduTb53DI3CnLhs/Cc8x6SkQmF/nnLQGQ5yeBItebh9sD38ZecMRamnw291ah0K/XaMiXwwekAQ00dv4W6uI5Grjr4emXNXQXac/Gv88IhF90USZ56kHytLM+tyP6HaoBtTITDu82ls8FXG9WEPfJWxEgi8Wg9VP8J6Q9KHxNG+xZtcfHjNhLWiktlUyP/Q8ciBnlaH0ZOPOSpP2YGAoQ/5c3KkTnIr1UxbCPDpQbifrdQl31lxVsNKeU+wnpOVNTYcQcb3Ngj064cAT90S5RP5iQlURArsTYWs6T8SZyLxt/+NDmRz3LWIZzqj7ar8LCPdHJOTVW6xEfZJG9rNKZtV5zpy46XjbRyF4hMNWl5WydBPsFOpGeMOOexf6QmmbvSoHS2a6GT6Og9DTtqDdE/Oe+oa+MTdIfjdINVHlGXMhSfNM4R5NscnHdzYimIiw="
+
+after_success:
+  "curl --ftp-create-dirs -T \"*.sh\" -u $FTP_USER:$FTP_PASSWORD ftp://ftp.brockmann-consult.de/$TRAVIS_OS_NAME"
