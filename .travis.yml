@@ -3,7 +3,7 @@ matrix:
     - os: linux
       dist: trusty
       sudo: required
-      python: 3.5
+      language: python
     - os: osx
       sudo: required
       language: generic
