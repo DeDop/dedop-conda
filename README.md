@@ -18,10 +18,11 @@ Clone this repo:
     git clone https://github.com/DeDop/dedop-conda.git
     
 Build Conda package `dedop` (see `recipe/meta.yaml`):
-    
-    cd dedop-conda
-    conda build recipe
-     
+<pre>
+cd dedop-conda
+conda build recipe
+conda build --output-folder output/directory recipe <b>#only for Linux/MacOS</b>
+</pre>
      
 Test new Conda package `dedop` in test environment `dedop-test`
      
@@ -30,17 +31,18 @@ Test new Conda package `dedop` in test environment `dedop-test`
     conda install --use-local dedop
     ...
     dedop --help
+    
+To upload the package to Anaconda Cloud (public repository)
 
-### Remaining problems & TODOs
+    conda install anaconda-client
+    anaconda login
+    anaconda upload path/to/package.tar.bz2
 
-* Must upload the package to a public Anaconda channel
+Current dedop repository URL: https://anaconda.org/pans/dedop/files
 
 ## Anaconda installer
 
 ### Building the installer
-
-*Warning: there is still an absolute (Windows!) path in `installer/construct.yaml` which will remain
-until we have uploaded the DeDop Conda package to a public repository.*
 
 Install `constructor` in your root Miniconda:
 
