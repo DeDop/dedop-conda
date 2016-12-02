@@ -3,10 +3,10 @@ matrix:
     - os: linux
       dist: trusty
       sudo: required
+      python: 3.5
     - os: osx
       sudo: required
-
-language: python
+      language: generic
 
 install:
   - sudo apt-get update
