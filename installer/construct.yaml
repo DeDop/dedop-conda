@@ -1,5 +1,5 @@
 name: DeDop
-version: 0.5.2
+version: 0.5.3
 
 channels:
   - http://repo.continuum.io/pkgs/free/
