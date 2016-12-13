@@ -1,6 +1,6 @@
 package:
   name: dedop
-  version: "0.5.2"
+  version: "0.5.3"
 
 build:
   # string: 'rc01'
@@ -13,7 +13,7 @@ build:
     - dedop = dedop.ui.cli:main
 
 source:
-  git_rev: v0.5.2
+  git_rev: v0.5.3
   git_url: https://github.com/DeDop/dedop-core.git
   # Uncomment to skip the "git clone" step
   # path: ../../dedop
@@ -71,7 +71,7 @@ app:
 
 about:
   home: https://github.com/DeDop/dedop
-  license: GPL-3
+  license: MIT
   license_file: LICENSE
   summary: "DeDop is a User Configurable Tool for Processing Delay Doppler Altimeter Data."
 
