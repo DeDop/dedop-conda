@@ -10,6 +10,7 @@ specs:
   - conda
   - jupyter
   - numpy
+  - numexpr
   - scipy
   - netcdf4
   - dedop
