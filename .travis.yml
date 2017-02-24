@@ -24,6 +24,7 @@ install:
   # Useful for debugging any issues with conda
   - conda info -a
   - conda install conda-build anaconda-client
+  - conda build -c ccitools recipe
   - RECIPE_OUTPUT=$(conda build -c ccitools recipe --output)
   - which anaconda
   - ls -l "$RECIPE_OUTPUT"
