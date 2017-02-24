@@ -3,17 +3,19 @@ version: 0.5.4a1
 
 channels:
   - http://repo.continuum.io/pkgs/free/
+  - https://conda.anaconda.org/ccitools
   - https://conda.anaconda.org/dedop
 
 specs:
   - python 3.5*
+  - cate-util 0.7.0*
+  - dedop
   - conda
   - jupyter
   - numpy
   - numexpr
   - scipy
   - netcdf4
-  - dedop
   # dedop.ui.analysis only:
   - pyproj
   - matplotlib
