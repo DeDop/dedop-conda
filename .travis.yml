@@ -23,7 +23,7 @@ install:
   - conda update -q conda
   # Useful for debugging any issues with conda
   - conda info -a
-  - conda install conda-build anaconda-client
+  - conda install conda-build anaconda-client=1.5.1
   - RECIPE_OUTPUT=$(conda build -c ccitools recipe --output)
   - echo $RECIPE_OUTPUT
   - anaconda -v -t $ANACONDA_TOKEN upload "$RECIPE_OUTPUT"

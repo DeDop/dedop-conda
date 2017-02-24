@@ -3,7 +3,7 @@ package:
   version: "0.5.4"
 
 build:
-  string: 'a2'
+  string: 'a1'
   number: 0
   # noarch_python: False
   # preserve_egg_dir: False
