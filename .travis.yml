@@ -23,7 +23,7 @@ install:
   - conda update -q conda
   # Useful for debugging any issues with conda
   - conda info -a
-  - conda install conda-build
+  - conda install conda-build anaconda-client
   - RECIPE_OUTPUT=$(conda build -c ccitools recipe --output)
   - anaconda -t $ANACONDA_TOKEN upload "$RECIPE_OUTPUT" -u dedop
   - conda create -q -n constructor-environment python=$CONDA_PY constructor
