@@ -19,6 +19,7 @@ install:
   - conda update -q conda
   # Useful for debugging any issues with conda
   - conda info -a
+  - conda install conda-build
   - conda build --output-folder build -c ccitools recipe
   - conda create -q -n constructor-environment python=$TRAVIS_PYTHON_VERSION constructor
   - source activate constructor-environment
