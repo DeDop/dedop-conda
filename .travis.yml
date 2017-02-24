@@ -1,5 +1,11 @@
+language: generic
+
 env:
   - CONDA_PY=3.5
+
+os:
+  - linux
+  - osx
 
 matrix:
   include:
