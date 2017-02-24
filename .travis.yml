@@ -25,7 +25,8 @@ install:
   - conda info -a
   - conda install conda-build anaconda-client
   - RECIPE_OUTPUT=$(conda build -c ccitools recipe --output)
-  - echo anaconda -v -t $ANACONDA_TOKEN upload "$RECIPE_OUTPUT" -u dedop --force
+  - which anaconda
+  - ls -l "$RECIPE_OUTPUT"
   - anaconda -v -t $ANACONDA_TOKEN upload "$RECIPE_OUTPUT" -u dedop --force
   - conda create -q -n constructor-environment python=$CONDA_PY constructor
   - source activate constructor-environment
