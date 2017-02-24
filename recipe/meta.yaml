@@ -1,19 +1,19 @@
 package:
   name: dedop
-  version: "0.5.3"
+  version: "0.5.4"
 
 build:
-  # string: 'rc01'
+  string: 'a1'
   number: 0
   # noarch_python: False
   # preserve_egg_dir: False
   # osx_is_app: False
   entry_points:
     # Put any entry points (scripts to be generated automatically) here.
-    - dedop = dedop.ui.cli:main
+    - dedop = dedop.cli.main:main
 
 source:
-  git_rev: v0.5.3
+  # git_rev: v0.5.3
   git_url: https://github.com/DeDop/dedop-core.git
   # Uncomment to skip the "git clone" step
   # path: ../../dedop
@@ -27,6 +27,7 @@ requirements:
 
   run:
     - python 3.5*
+    - cate-util 0.7.0*
     - numpy
     - scipy
     - netcdf4
@@ -44,7 +45,7 @@ test:
   imports:
     - dedop
     - dedop.ui
-    - dedop.ui.cli
+    - dedop.cli.main
     - dedop.ui.inspect
 
   commands:
