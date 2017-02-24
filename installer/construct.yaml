@@ -1,9 +1,9 @@
 name: DeDop
-version: 0.5.3
+version: 0.5.4a1
 
 channels:
   - http://repo.continuum.io/pkgs/free/
-  - https://conda.anaconda.org/pans
+  - https://conda.anaconda.org/dedop
 
 specs:
   - python 3.5*
