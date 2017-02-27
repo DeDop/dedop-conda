@@ -8,7 +8,7 @@ skip_tags: true
 
 install:
   - set PATH=C:\Miniconda35-x64;C:\Miniconda35-x64\Scripts;%PATH%
-  - ps: ls "C:\Miniconda35-x64\NSIS\Contrib\Modern UI 2"
+  - ps: ls "C:\Miniconda35-x64\"
   - conda install -y constructor
   - ps: ls "C:\Miniconda35-x64\NSIS\Contrib\Modern UI 2"
   - constructor installer
