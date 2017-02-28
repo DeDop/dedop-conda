@@ -12,7 +12,7 @@ install:
   - set PATH=C:\Miniconda35-x64;C:\Miniconda35-x64\Scripts;%PATH%
   - conda install -y constructor anaconda-client
   - conda build -c ccitools recipe
-  - DEDOP_OUTPUT=$(conda build -c ccitools recipe)
+  - DEDOP_OUTPUT=$(conda build -c ccitools recipe --output)
   - anaconda -v -t $ANACONDA_TOKEN upload "$DEDOP_OUTPUT" -u dedop --force
   - constructor installer
 
