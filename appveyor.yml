@@ -19,7 +19,7 @@ install:
   - conda install -y conda-build constructor anaconda-client
   - conda build -c ccitools recipe
   - ps: $DEDOP_OUTPUT=conda build -c ccitools recipe --output
-  - anaconda -v -t $ANACONDA_TOKEN upload "$DEDOP_OUTPUT" -u dedop --force
+  - anaconda -v -t %ANACONDA_TOKEN% upload "%DEDOP_OUTPUT%" -u dedop --force
   - constructor installer
 
 artifacts:
