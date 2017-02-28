@@ -1,5 +1,11 @@
 version: '0.5.4.dev1.{build}'
 
+environment:
+  global:
+    # Example can be found here https://github.com/quantopian/zipline/blob/master/appveyor.yml
+    ANACONDA_TOKEN:
+      secure: "8Wuonn7zuZIDXX26rNMQ+ivY6msM56v7d0TNUpQ7rUy291IxaW88aWDEPYDthTZ8"
+
 build: off
 
 branches:
