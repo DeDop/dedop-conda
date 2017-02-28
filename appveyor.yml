@@ -7,24 +7,15 @@ environment:
       secure: "8Wuonn7zuZIDXX26rNMQ+ivY6msM56v7d0TNUpQ7rUy291IxaW88aWDEPYDthTZ8"
     PYTHON_LOC: "C:\\Miniconda35-x64"
 
-
-#build: off
-#
-#branches:
-#  only:
-#    - master
-#
-#skip_tags: true
-
 install:
   - cmd: call %PYTHON_LOC%\Scripts\activate.bat
   - cmd: conda config --set always_yes yes --set changeps1 no
   - cmd: conda install -y conda-build constructor anaconda-client
-  - cmd: conda build -c ccitools recipe
 
 build_script:
-  - cmd: conda build -c ccitools recipe --python=3.5
+  - cmd: conda build -c ccitools recipe
   - cmd: constructor installer
 
 deploy_script:
   - cmd: anaconda -v -t %ANACONDA_TOKEN% upload "%PYTHON_LOC%\conda-bld\win-64\dedop*.tar.bz2" -u dedop --force
+  - cmd: anaconda -v -t %ANACONDA_TOKEN% upload --user dedop --package dedop-installer --package-type file --version 1 "C:\projects\dedop-conda\DeDop*.exe" --force
