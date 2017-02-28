@@ -30,8 +30,8 @@ install:
 script:
   - conda build -c ccitools recipe
   - constructor installer
-  - pwd
 
 after_success:
   - RECIPE_OUTPUT=$(conda build -c ccitools recipe --output)
   - anaconda -v -t $ANACONDA_TOKEN upload "$RECIPE_OUTPUT" -u dedop --force
+  - anaconda -v -t %ANACONDA_TOKEN% upload --user dedop --package dedop-installer --package-type file --version 1 "DeDop*.sh" --force

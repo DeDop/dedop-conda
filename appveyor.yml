@@ -18,4 +18,4 @@ build_script:
 
 deploy_script:
   - cmd: anaconda -v -t %ANACONDA_TOKEN% upload "%PYTHON_LOC%\conda-bld\win-64\dedop*.tar.bz2" -u dedop --force
-  - cmd: anaconda -v -t %ANACONDA_TOKEN% upload --user dedop --package dedop-installer --package-type file --version 1 "C:\projects\dedop-conda\DeDop*.exe" --force
+  - cmd: anaconda -v -t %ANACONDA_TOKEN% upload --user dedop --package dedop-installer --package-type file --version 1 "DeDop*.exe" --force
