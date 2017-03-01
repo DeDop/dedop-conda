@@ -7,8 +7,8 @@ channels:
   - https://conda.anaconda.org/dedop
 
 specs:
-  - python 3.5*
-  - cate-util 0.7.0*
+  - python >=3.5,<3.6
+  - cate-util 0.7.0* # need to be modified to using '>' or '<' after there is an official release of this lib
   - dedop
   - conda
   - jupyter

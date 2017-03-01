@@ -21,14 +21,14 @@ source:
 
 requirements:
   build:
-    - python 3.5*
+    - python >=3.5,<3.6
     - setuptools
     - pytest
     - pytest-cov
 
   run:
-    - python 3.5*
-    - cate-util 0.7.0*
+    - python >=3.5
+    - cate-util 0.7.0*  # need to be modified to using '>' or '<' after there is an official release of this lib
     - numpy
     - scipy
     - netcdf4
