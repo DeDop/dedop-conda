@@ -16,10 +16,11 @@ install:
 build_script:
   - cmd: conda build -c ccitools recipe
   - cmd: constructor installer
-
-deploy_script:
   - cmd: anaconda -v -t %ANACONDA_TOKEN% upload "%PYTHON_LOC%\conda-bld\win-64\dedop*.tar.bz2" -u dedop --force
-  #- cmd: anaconda -v -t %ANACONDA_TOKEN% upload --user dedop --package dedop-installer --package-type file --version %INSTALLER_VERSION% "DeDop*.exe" --force
+
+#deploy_script:
+#  #- cmd: anaconda -v -t %ANACONDA_TOKEN% upload "%PYTHON_LOC%\conda-bld\win-64\dedop*.tar.bz2" -u dedop --force
+#  #- cmd: anaconda -v -t %ANACONDA_TOKEN% upload --user dedop --package dedop-installer --package-type file --version %INSTALLER_VERSION% "DeDop*.exe" --force
 
 deploy:
   - provider: FTP
