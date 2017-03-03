@@ -23,7 +23,7 @@ build_script:
 #  #- cmd: anaconda -v -t %ANACONDA_TOKEN% upload --user dedop --package dedop-installer --package-type file --version %INSTALLER_VERSION% "DeDop*.exe" --force
 
 artifacts:
-  - path: 'DeDop.*.exe'
+  - path: 'DeDop*.exe'
     name: installer
 
 deploy:
