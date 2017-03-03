@@ -22,6 +22,10 @@ build_script:
 #  #- cmd: anaconda -v -t %ANACONDA_TOKEN% upload "%PYTHON_LOC%\conda-bld\win-64\dedop*.tar.bz2" -u dedop --force
 #  #- cmd: anaconda -v -t %ANACONDA_TOKEN% upload --user dedop --package dedop-installer --package-type file --version %INSTALLER_VERSION% "DeDop*.exe" --force
 
+artifacts:
+  - path: 'DeDop.*.exe'
+    name: installer
+
 deploy:
   - provider: FTP
     protocol: ftp
@@ -29,6 +33,6 @@ deploy:
     username: dedop
     password:
       secure: GL7E4cOZi9mzFvaDMAVOaQ==
-    artifact: /DeDop.*\.exe/
+    artifact: installer
     folder: win64
     debug: true
