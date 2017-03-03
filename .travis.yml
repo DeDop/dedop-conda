@@ -41,4 +41,4 @@ after_success:
   - INSTALLER_FILE=DeDop*.sh
   - anaconda -v -t $ANACONDA_TOKEN upload "$RECIPE_OUTPUT" -u dedop --force
   - anaconda -v -t $ANACONDA_TOKEN upload --user dedop --package dedop-installer --package-type file --version $INSTALLER_VERSION $INSTALLER_FILE --force
-  - "curl --ftp-create-dirs -T $INSTALLER_FILE -u $FTP_USER:$FTP_PASSWORD ftp://ftp.brockmann-consult.de/$TRAVIS_OS_NAME"
+  - "curl -v --ftp-create-dirs -T $INSTALLER_FILE -u $FTP_USER:$FTP_PASSWORD ftp://ftp.brockmann-consult.de/$TRAVIS_OS_NAME"
