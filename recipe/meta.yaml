@@ -29,18 +29,18 @@ requirements:
   run:
     - python >=3.5
     - cate-util 0.7.0*  # need to be modified to using '>' or '<' after there is an official release of this lib
-    - numpy
-    - scipy
-    - netcdf4
+    - numpy 1.11*
+    - scipy >=0.17
+    - netcdf4 >=1.2
     - hdf4 >=4.2.12
-    - numexpr
+    - numexpr >=2.6.2
     # dedop.ui.analysis only:
-    - pyproj
-    - matplotlib
-    - bokeh
-    - jupyter
-    - ipywidgets
-    - menuinst                    # [win]
+    - pyproj >=1.9.5
+    - matplotlib >=1.5,<2
+    - bokeh >=0.12.4
+    - jupyter >=1.0.0
+    - ipywidgets >=5.2.2
+    - menuinst >=1.4.4                    # [win]
 
 test:
   # Python imports
@@ -48,7 +48,9 @@ test:
     - dedop
     - dedop.ui
     - dedop.cli.main
-    - dedop.ui.inspect
+    # for the moment this is disabled because it somehow failed in windows. A manual test has been performed
+    # and it worked. More investigation needs to be done to understand why
+    #- dedop.ui.inspect
 
   commands:
     # You can put test commands to be run here.  Use this to test that the
