@@ -25,8 +25,6 @@ install:
   # Useful for debugging any issues with conda
   - conda info -a
   - conda install conda-build anaconda-client
-  - conda create -q -n constructor-environment python=$CONDA_PY constructor
-  - source activate constructor-environment
 
 script:
   - conda build -c ccitools recipe
