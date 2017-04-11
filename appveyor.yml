@@ -14,7 +14,7 @@ install:
   - cmd: conda install -y conda-build anaconda-client
 
 build_script:
-  - cmd: conda build -c ccitools recipe
+  - cmd: conda build -c ccitools -c conda-forge -c defaults recipe
   - cmd: anaconda -v -t %ANACONDA_TOKEN% upload "%PYTHON_LOC%\conda-bld\win-64\dedop*.tar.bz2" -u dedop --force
 
 
