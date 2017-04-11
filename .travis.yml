@@ -27,8 +27,8 @@ install:
   - conda install conda-build anaconda-client
 
 script:
-  - conda build -c ccitools recipe
+  - conda build -c ccitools -c conda-forge -c defaults recipe
 
 after_success:
-  - RECIPE_OUTPUT=$(conda build -c ccitools recipe --output)
+  - RECIPE_OUTPUT=$(conda build -c ccitools -c conda-forge -c defaults recipe --output)
   - anaconda -v -t $ANACONDA_TOKEN upload "$RECIPE_OUTPUT" -u dedop --force
