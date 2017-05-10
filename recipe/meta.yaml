@@ -28,7 +28,7 @@ requirements:
 
   run:
     - python >=3.5
-    - cate-util 0.7.0.dev1*  # need to be modified to using '>' or '<' after there is an official release of this lib
+    - cate-util 0.8.0*  # need to be modified to using '>' or '<' after there is an official release of this lib
     - numpy 1.11*
     - scipy >=0.17
     - netcdf4 >=1.2
