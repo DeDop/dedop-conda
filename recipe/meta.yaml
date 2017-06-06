@@ -21,13 +21,13 @@ source:
 
 requirements:
   build:
-    - python >=3.5,<3.6
+    - python 3.5*
     - setuptools
     - pytest
     - pytest-cov
 
   run:
-    - python >=3.5
+    - python 3.5*
     - cate-util 0.8.0*  # need to be modified to using '>' or '<' after there is an official release of this lib
     - numpy 1.11*
     - scipy >=0.17
