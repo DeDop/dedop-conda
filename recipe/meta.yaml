@@ -19,6 +19,7 @@ source:
   # Uncomment to skip the "git clone" step
   # path: ../../dedop
 
+# versioning of the requirements follow the guideline here https://conda.io/docs/spec.html#build-version-spec
 requirements:
   build:
     - python 3.5*
@@ -29,7 +30,7 @@ requirements:
   run:
     - python 3.5*
     - cate-util 0.8.0*  # need to be modified to using '>' or '<' after there is an official release of this lib
-    - numpy >=1.11
+    - numpy 1.11.3 py35_0 # so that it does not use the open_blas version, which does not work in MacOS
     - scipy >=0.17
     - netcdf4 >=1.2
     - hdf4 >=4.2.12
