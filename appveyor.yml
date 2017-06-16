@@ -1,4 +1,4 @@
-version: '0.5.4.dev.{build}'
+version: '1.0.0.{build}'
 
 environment:
   global:
@@ -6,7 +6,6 @@ environment:
     ANACONDA_TOKEN:
       secure: "8Wuonn7zuZIDXX26rNMQ+ivY6msM56v7d0TNUpQ7rUy291IxaW88aWDEPYDthTZ8"
     PYTHON_LOC: "C:\\Miniconda35-x64"
-    INSTALLER_VERSION: "0.5.4.dev"
 
 install:
   - cmd: call %PYTHON_LOC%\Scripts\activate.bat
