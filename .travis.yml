@@ -27,7 +27,7 @@ install:
   - conda install conda-build anaconda-client
 
 script:
-  - conda build -c ccitools -c conda-forge -c defaults recipe
+  - conda build --old-build-string -c ccitools -c conda-forge -c defaults recipe
 
 after_success:
   - RECIPE_OUTPUT=$(conda build -c ccitools -c conda-forge -c defaults recipe --output)
