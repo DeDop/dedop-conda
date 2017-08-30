@@ -30,5 +30,5 @@ script:
   - conda build --old-build-string -c ccitools -c conda-forge -c defaults recipe
 
 after_success:
-  - RECIPE_OUTPUT=$(conda build -c ccitools -c conda-forge -c defaults recipe --output)
+  - RECIPE_OUTPUT=$(conda build --old-build-string -c ccitools -c conda-forge -c defaults recipe --output)
   - anaconda -v -t $ANACONDA_TOKEN upload "$RECIPE_OUTPUT" -u dedop --force
