@@ -2,7 +2,7 @@
 # ref: https://www.python.org/dev/peps/pep-0440/#developmental-releases
 package:
   name: dedop
-  version: "1.0.0"
+  version: "1.1.0"
 
 build:
   number: 0
