@@ -30,8 +30,13 @@ requirements:
   run:
     - python 3.5*
     - cate-util 0.8.0rc3 np111py35_0   # need to be modified to using '>' or '<' after there is an official release of this lib
-    - numpy ==1.11.3 # so that it does not use the open_blas version, which does not work in MacOS
-    - scipy >=0.19.0 # so that it does not use the open_blas version
+    # the Windows and non-Windows versions are differentiated because in Windows, mkl 2018 depends on newer version of numpy and scipy
+    # In MacOS and Linux, however, without specifying a really specific version, it will use the open_blas version of the library,
+    # which does not really work in MacOS. When a better consolidation technique is found, replace this.
+    - numpy 1.11.3 py35_0       # [not win]
+    - numpy ==1.11.3            # [win]
+    - scipy 0.19.0 np111py35_0  # [not win]
+    - scipy >=0.19.0            # [win]
     - netcdf4 >=1.2
     - hdf4 >=4.2.12
     - numexpr >=2.6.2
