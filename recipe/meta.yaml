@@ -48,6 +48,7 @@ requirements:
     - ipywidgets >=6.0.0,<7 # ipywidgets 7 makes it not importable in the notebook. Possible some other dependencies are required
     - menuinst >=1.4.4                     # [win]
     - mkl >=2018.0.1                       # [win]
+    - pango >=1.40.3			   # [linux]
 
 test:
   # Python imports
