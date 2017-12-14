@@ -1,5 +1,8 @@
 [![Build Status](https://travis-ci.org/DeDop/dedop-conda.svg?branch=master)](https://travis-ci.org/DeDop/dedop-conda)
-[![Build status](https://ci.appveyor.com/api/projects/status/t5kgos0p7d6gs3dn?svg=true)](https://ci.appveyor.com/project/hans-permana/dedop-conda)
+[![Build status](https://ci.appveyor.com/api/projects/status/t5kgos0p7d6gs3dn?svg=true)](https://ci.appveyor.com/project/hans-permana/dedop-conda)  
+Conda install Linux: [![Anaconda-Server Badge](https://anaconda.org/dedop/dedop/badges/version.svg)](https://anaconda.org/dedop/dedop)  
+Conda install MacOS: [![Anaconda-Server Badge](https://anaconda.org/dedop/dedop/badges/version.svg)](https://anaconda.org/dedop/dedop)  
+Conda install Windows: [![Anaconda-Server Badge](https://anaconda.org/dedop/dedop/badges/version.svg)](https://anaconda.org/dedop/dedop)
 
 # dedop-conda
 
