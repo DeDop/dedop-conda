@@ -1,11 +1,11 @@
-version: '1.3.0.{build}'
+version: '1.4.0.dev1.{build}'
 
 environment:
   global:
     # Example can be found here https://github.com/quantopian/zipline/blob/master/appveyor.yml
     ANACONDA_TOKEN:
       secure: "8Wuonn7zuZIDXX26rNMQ+ivY6msM56v7d0TNUpQ7rUy291IxaW88aWDEPYDthTZ8"
-    PYTHON_LOC: "C:\\Miniconda35-x64"
+    PYTHON_LOC: "C:\\Miniconda36-x64"
 
 install:
   - cmd: call %PYTHON_LOC%\Scripts\activate.bat
