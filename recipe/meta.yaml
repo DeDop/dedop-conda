@@ -23,7 +23,7 @@ source:
 requirements:
   build:
     - python 3.6*
-    - cate-util 1.0.0.dev1 py36_0   # need to be modified to using '>' or '<' after there is an official release of this lib
+    - cate-util 1.1.0.dev1 py36_0   # need to be modified to using '>' or '<' after there is an official release of this lib
     # the Windows and non-Windows versions are differentiated because in Windows, mkl 2018 depends on newer version of numpy and scipy
     # In MacOS and Linux, however, without specifying a really specific version, it will use the open_blas version of the library,
     # which does not really work in MacOS. When a better consolidation technique is found, replace this.
@@ -40,16 +40,13 @@ requirements:
     - ipywidgets ==7.1.1 # ipywidgets 7 makes it not importable in the notebook. Possible some other dependencies are required
     - menuinst >=1.4.4           # [win]
     - pango >=1.40.3			 # [linux]
-    - jdcal ==1.3
-    - shapely ==1.6.2
-    - xarray ==0.10.0
     - setuptools
     - pytest
     - pytest-cov
 
   run:
     - python 3.6*
-    - cate-util 1.0.0.dev1 py36_0   # need to be modified to using '>' or '<' after there is an official release of this lib
+    - cate-util 1.1.0.dev1 py36_0   # need to be modified to using '>' or '<' after there is an official release of this lib
     # the Windows and non-Windows versions are differentiated because in Windows, mkl 2018 depends on newer version of numpy and scipy
     # In MacOS and Linux, however, without specifying a really specific version, it will use the open_blas version of the library,
     # which does not really work in MacOS. When a better consolidation technique is found, replace this.
@@ -66,9 +63,6 @@ requirements:
     - ipywidgets ==7.1.1 # ipywidgets 7 makes it not importable in the notebook. Possible some other dependencies are required
     - menuinst >=1.4.4           # [win]
     - pango >=1.40.3			 # [linux]
-    - jdcal ==1.3
-    - shapely ==1.6.2
-    - xarray ==0.10.0
 
 test:
   # Python imports
