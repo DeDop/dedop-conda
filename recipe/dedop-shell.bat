@@ -6,6 +6,7 @@ rem Make DEDOP_HOME=%DEDOP_BIN%\.. an absolute path:
 pushd .
 cd %DEDOP_BIN%\..
 set DEDOP_HOME=%CD%
+set PYTHONPATH=%DEDOP_HOME%\site-packages
 popd
 
 call "%DEDOP_BIN%\activate.bat" "%DEDOP_HOME%"

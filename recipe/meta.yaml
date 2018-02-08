@@ -23,46 +23,40 @@ source:
 requirements:
   build:
     - python 3.6*
-    - cate-util 1.1.0.dev1 py36_0   # need to be modified to using '>' or '<' after there is an official release of this lib
-    # the Windows and non-Windows versions are differentiated because in Windows, mkl 2018 depends on newer version of numpy and scipy
-    # In MacOS and Linux, however, without specifying a really specific version, it will use the open_blas version of the library,
-    # which does not really work in MacOS. When a better consolidation technique is found, replace this.
+    - cate-util 1.1.0.dev1 py36_0
+    - hdf4 ==4.2.12
+    - netcdf4 ==1.2.4
+    - numexpr ==2.6.4
     - numpy ==1.11.3
     - scipy ==1.0.0
-    - netcdf4 ==1.2.4
-    - hdf4 ==4.2.12
-    - numexpr ==2.6.4
+    #
     # dedop.ui.analysis only:
-    - pyproj ==1.9.5.1
-    - matplotlib ==2.0.2
-    - bokeh ==0.12.13 # bokeh 0.12.9 has some changes that make it incompatible with some code in the notebooks
+    - bokeh ==0.12.13
+    - ipywidgets ==7.1.1
     - jupyter ==1.0.0
-    - ipywidgets ==6.0.1 # ipywidgets 7 makes it not importable in the notebook. Possible some other dependencies are required
-    - menuinst >=1.4.4           # [win]
-    - pango >=1.40.3			 # [linux]
+    - matplotlib ==2.0.2
+    - pyproj ==1.9.5.1
+    #
+    # build
     - setuptools
     - pytest
     - pytest-cov
 
   run:
     - python 3.6*
-    - cate-util 1.1.0.dev1 py36_0   # need to be modified to using '>' or '<' after there is an official release of this lib
-    # the Windows and non-Windows versions are differentiated because in Windows, mkl 2018 depends on newer version of numpy and scipy
-    # In MacOS and Linux, however, without specifying a really specific version, it will use the open_blas version of the library,
-    # which does not really work in MacOS. When a better consolidation technique is found, replace this.
+    - cate-util 1.1.0.dev1 py36_0
+    - hdf4 ==4.2.12
+    - netcdf4 ==1.2.4
+    - numexpr ==2.6.4
     - numpy ==1.11.3
     - scipy ==1.0.0
-    - netcdf4 ==1.2.4
-    - hdf4 ==4.2.12
-    - numexpr ==2.6.4
+    #
     # dedop.ui.analysis only:
-    - pyproj ==1.9.5.1
-    - matplotlib ==2.0.2
-    - bokeh ==0.12.13 # bokeh 0.12.9 has some changes that make it incompatible with some code in the notebooks
+    - bokeh ==0.12.13
+    - ipywidgets ==6.0.1
     - jupyter ==1.0.0
-    - ipywidgets ==6.0.1 # ipywidgets 7 makes it not importable in the notebook. Possible some other dependencies are required
-    - menuinst >=1.4.4           # [win]
-    - pango >=1.40.3			 # [linux]
+    - matplotlib ==2.0.2
+    - pyproj ==1.9.5.1
 
 test:
   # Python imports
