@@ -12,6 +12,7 @@ build:
   entry_points:
     # Put any entry points (scripts to be generated automatically) here.
     - dedop = dedop.cli.main:main
+    - dedop-webapi = dedop.webapi.main:main
 
 source:
   git_rev: python-36
@@ -64,8 +65,6 @@ test:
     - dedop
     - dedop.ui
     - dedop.cli.main
-    # for the moment this is disabled because it somehow failed in windows. A manual test has been performed
-    # and it worked. More investigation needs to be done to understand why
     - dedop.ui.inspect
 
   commands:
