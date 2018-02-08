@@ -60,7 +60,7 @@ requirements:
     - matplotlib ==2.0.2
     - bokeh ==0.12.13 # bokeh 0.12.9 has some changes that make it incompatible with some code in the notebooks
     - jupyter ==1.0.0
-    - ipywidgets ==7.1.1 # ipywidgets 7 makes it not importable in the notebook. Possible some other dependencies are required
+    - ipywidgets ==6.0.1 # ipywidgets 7 makes it not importable in the notebook. Possible some other dependencies are required
     - menuinst >=1.4.4           # [win]
     - pango >=1.40.3			 # [linux]
 
