@@ -1,4 +1,4 @@
-# version 1.4.0, b1
+# version 1.4.0, b2
 
 # Not released/deployed yet! Use PEP 440 versioning scheme
 # ref: https://www.python.org/dev/peps/pep-0440/#developmental-releases
@@ -17,7 +17,7 @@ build:
     - dedop-webapi = dedop.webapi.main:main
 
 source:
-  git_rev: python-36
+  # git_rev: python-36
   git_url: https://github.com/DeDop/dedop-core.git
   # Uncomment to skip the "git clone" step
   # path: ../../dedop
