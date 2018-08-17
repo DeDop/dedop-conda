@@ -1,10 +1,10 @@
-# version 1.4.0, b3
+# version 1.5.0, b1
 
 # Not released/deployed yet! Use PEP 440 versioning scheme
 # ref: https://www.python.org/dev/peps/pep-0440/#developmental-releases
 package:
   name: dedop
-  version: "1.4.0"
+  version: "1.5.0"
 
 build:
   number: 0
