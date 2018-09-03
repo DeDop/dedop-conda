@@ -1,4 +1,4 @@
-# version 1.5.0, b1
+# version 1.5.0, b2
 
 # Not released/deployed yet! Use PEP 440 versioning scheme
 # ref: https://www.python.org/dev/peps/pep-0440/#developmental-releases
@@ -56,7 +56,7 @@ requirements:
     #
     # dedop.ui.analysis only:
     - bokeh ==0.12.13
-    - ipywidgets ==6.0.1
+    - ipywidgets ==7.1.1
     - jupyter ==1.0.0
     - matplotlib ==2.0.2
     - pyproj ==1.9.5.1
