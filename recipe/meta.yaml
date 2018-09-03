@@ -1,4 +1,4 @@
-# version 1.5.0, b2
+# version 1.5.0, b3
 
 # Not released/deployed yet! Use PEP 440 versioning scheme
 # ref: https://www.python.org/dev/peps/pep-0440/#developmental-releases
@@ -56,10 +56,14 @@ requirements:
     #
     # dedop.ui.analysis only:
     - bokeh ==0.12.13
-    - ipywidgets ==7.1.1
+    - ipywidgets 7.1.1 py36_0
     - jupyter ==1.0.0
     - matplotlib ==2.0.2
     - pyproj ==1.9.5.1
+    #
+    # special requirements to fix installation issue in Linux and MacOS, possibly due to problem installing ipywidgets
+    # when ipython_genutils installed is of noarch version (as is the case when not explicitly specified). Check #54
+    - ipython_genutils 0.2.0 py36_0
 
 test:
   # Python imports
